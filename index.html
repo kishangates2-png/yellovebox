@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Online Store</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero{
+            height: 100vh;
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1{
+            font-size: 60px;
+            color: #000;
+            margin: 0;
+        }
+        .hero h4{
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0 20px 0;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #fff;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+<h1 id="yelloveh1">Yellovebox</h1>
+<h4>Lifestyle Products</h4>
+<button onclick="Changecolor()">Change title color</button>
+
+    </div>
+    <script>
+function Changecolor()
+{
+    document.getElementById("yelloveh1").style.color = "red";
+}
+    </script>
+</body>
+</html>
